@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registierung Seite</title>
+</head>
+<body>
+	<h1>Personliche Daten</h1>
+	<main>
+		<form  method="post" action="../CreateServletTpf" >
+
+			<p>
+				Anrede <input type="text" list="titelList" name="anrede" >
+				<datalist id="titelList">
+					<option value="Herr">
+					<option value="Frau">
+				</datalist>
+			</p>
+			<p>
+
+				Nachname: <input type="text" name="nachname" size="30" maxlength="30"
+					required>
+			</p>
+			<p>
+
+				Vorname: <input type="text" name="vorname" size="30" maxlength="30"
+					required>
+			</p>
+			<p>
+				E-mail: <input type="email" id="email" name="email" maxlength="70" required>
+			</p>
+			<p>
+				Benutzername: <input type="text" size="30" name= "benutzername"
+					maxlength="30" required>
+			</p>
+			<p>
+				Passwort: <input type="password" size="30" maxlength="12" name="passwort"
+					placeholder="Password eingeben" required>
+			</p>
+			
+			<p>
+				Geburtsdatum: <input type="date" id="birthday" name="geburtsdatum"
+					required>
+			</p>
+			<p>
+				Gewicht: <input type="number" size="30" name="gewicht" maxlength="3"
+					placeholder="Aktuelle Gewischt in kg" required>
+			</p>
+			<p>
+				Groesse: <input type="number" size="30" maxlength="3" name= "Größe"
+					placeholder="Körpergroße in cm" required>
+			</p>
+			<p>
+				<button type="submit" name="action" value="neu"> Jetzt registrieren</button>
+			</p>
+		</form>
+	</main>
+</body>
+</html>
+<!-- Hussam -->
